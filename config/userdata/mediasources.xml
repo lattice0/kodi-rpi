@@ -1,6 +1,0 @@
-<mediasources>
-    <network>
-        <location id="0">smb://</location>
-        <location id="1">smb://</location>
-    </network>
-</mediasources>
