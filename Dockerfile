@@ -1,7 +1,7 @@
 FROM resin/rpi-raspbian:jessie
 
 # Enable building ARM container on x86 machinery on the web (comment out next line if built on Raspberry)
-RUN [ "cross-build-start" ]
+#RUN [ "cross-build-start" ]
 
 RUN apt-get clean && apt-get update && apt-get install -y --no-install-recommends xserver-xorg xinit \
      fbset libraspberrypi0 alsa-base alsa-utils alsa-tools kodi xserver-xorg-legacy dbus-x11 \
@@ -40,4 +40,4 @@ EXPOSE 8080 9777/udp
 CMD ["bash", "/usr/bin/kodi-standalone"]
 
 # stop processing ARM emulation (comment out next line if built on Raspberry)
-RUN [ "cross-build-end" ]
+#RUN [ "cross-build-end" ]
