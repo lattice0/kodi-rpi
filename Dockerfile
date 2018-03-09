@@ -25,6 +25,7 @@ usermod -a -G tty root
 COPY "./files-to-copy-to-image/Xwrapper.config" "/etc/X11"
 COPY "./files-to-copy-to-image/10-permissions.rules" "/etc/udev/rules.d"
 COPY "./files-to-copy-to-image/99-input.rules" "/etc/udev/rules.d"
+COPY "./files-to-copy-to-image/Splash*" "/usr/share/kodi/media/"
 # Uncomment if you want to enable webserver and remote control settings by default
 COPY "./files-to-copy-to-image/settings.xml" "/usr/share/kodi/system/settings"
 
